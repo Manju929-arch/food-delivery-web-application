@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+test/
+venv/
+env/
+
+# Django
+db.sqlite3
+*.sqlite3
+
+# Sensitive data
+.env
+data.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
