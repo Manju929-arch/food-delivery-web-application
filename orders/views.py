@@ -8,7 +8,7 @@ import stripe
 import os
 from django.conf import settings
 
-stripe.api_key = os.getenv("STRIPE_SECRET_KEY")
+stripe.api_key = settings.STRIPE_SECRET_KEY
 def home(request):
     food_items = FoodItem.objects.all()
     food_item = food_items.filter(id=1).first()  # Safely get the first matching object

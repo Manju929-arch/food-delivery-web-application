@@ -19,7 +19,7 @@ A Django-based food delivery web application where users can browse food items, 
 
 - **Backend:** Django 4.x
 - **Frontend:** HTML, CSS, JavaScript
-- **Database:** SQLite (default, can be changed)
+- **Database:** PostgreSQL
 - **Payments:** Stripe API (test mode)
 
 ---
@@ -46,10 +46,7 @@ pip install django stripe
 ### 3. Stripe Setup
 
 - Register at [Stripe](https://dashboard.stripe.com/register) and get your **test secret key**.
-- In `orders/views.py`, set your Stripe secret key:
-  ```python
-  stripe.api_key = 'sk_test_...'
-  ```
+- Copy `.env.example` to `.env` and set `STRIPE_SECRET_KEY` there. Never commit `.env`.
 - You can find your key in the Stripe dashboard under **Developers > API keys**.
 
 ### 4. Database Migration
@@ -72,6 +69,14 @@ python manage.py runserver
 ```
 
 Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser.
+
+### Docker development
+
+```sh
+docker compose up -d --build
+```
+
+The application is available at [http://localhost:8000/](http://localhost:8000/). The Compose file reads local database and Stripe values from `.env`.
 
 ---
 
