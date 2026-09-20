@@ -1,0 +1,1370 @@
+[
+    {
+        "model":  "admin.logentry",
+        "pk":  1,
+        "fields":  {
+                       "action_time":  "2025-01-20T08:26:46.293Z",
+                       "user":  1,
+                       "content_type":  7,
+                       "object_id":  "1",
+                       "object_repr":  "Farmhouse Pizza",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  2,
+        "fields":  {
+                       "action_time":  "2025-01-20T11:26:17.583Z",
+                       "user":  1,
+                       "content_type":  7,
+                       "object_id":  "1",
+                       "object_repr":  "Farmhouse Pizza",
+                       "action_flag":  2,
+                       "change_message":  "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  3,
+        "fields":  {
+                       "action_time":  "2025-01-20T11:36:52.139Z",
+                       "user":  1,
+                       "content_type":  7,
+                       "object_id":  "2",
+                       "object_repr":  "Burger",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  4,
+        "fields":  {
+                       "action_time":  "2025-01-20T11:40:30.192Z",
+                       "user":  1,
+                       "content_type":  7,
+                       "object_id":  "3",
+                       "object_repr":  "sushi roll",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  5,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:35:07.871Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "4",
+                       "object_repr":  "butter chicken",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  6,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:37:57.905Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "5",
+                       "object_repr":  "Garlic Naan",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  7,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:44:36.708Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "6",
+                       "object_repr":  "paneer Tikka",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  8,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:45:12.401Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "7",
+                       "object_repr":  "Mango Lassi",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  9,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:45:47.329Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "8",
+                       "object_repr":  "Margherita Pizza",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  10,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:46:17.792Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "9",
+                       "object_repr":  "Fettuccine Alfredo",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  11,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:46:48.222Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "10",
+                       "object_repr":  "Caprese Salad",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  12,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:47:20.288Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "11",
+                       "object_repr":  "Tiramisu",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  13,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:47:52.438Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "12",
+                       "object_repr":  "California Roll",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  14,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:48:22.941Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "13",
+                       "object_repr":  "Spicy Tuna Roll",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  15,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:48:50.215Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "14",
+                       "object_repr":  "Miso Soup",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  16,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:49:22.806Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "15",
+                       "object_repr":  "Green Tea Mochi",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  17,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:49:57.004Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "16",
+                       "object_repr":  "Classic Cheeseburger",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  18,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:50:31.457Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "17",
+                       "object_repr":  "BBQ Bacon Burger",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  19,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:51:01.377Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "18",
+                       "object_repr":  "Sweet Potato Fries",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  20,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:51:29.539Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "19",
+                       "object_repr":  "Milkshake Trio",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  21,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:52:02.821Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "20",
+                       "object_repr":  "Quinoa Salad Bowl",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  22,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:52:34.746Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "21",
+                       "object_repr":  "Vegan Burger",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  23,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:53:06.126Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "22",
+                       "object_repr":  "Smoothie Bow",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  24,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:53:38.179Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "23",
+                       "object_repr":  "Chickpea Curry",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  25,
+        "fields":  {
+                       "action_time":  "2025-01-30T07:53:45.557Z",
+                       "user":  2,
+                       "content_type":  7,
+                       "object_id":  "22",
+                       "object_repr":  "Smoothie Bowl",
+                       "action_flag":  2,
+                       "change_message":  "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  26,
+        "fields":  {
+                       "action_time":  "2025-03-19T13:04:27.845Z",
+                       "user":  3,
+                       "content_type":  7,
+                       "object_id":  "24",
+                       "object_repr":  "Gobi",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  27,
+        "fields":  {
+                       "action_time":  "2025-03-22T08:11:58.068Z",
+                       "user":  3,
+                       "content_type":  7,
+                       "object_id":  "25",
+                       "object_repr":  "lassi",
+                       "action_flag":  1,
+                       "change_message":  "[{\"added\": {}}]"
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  28,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:24.159Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "40",
+                       "object_repr":  "Order #40 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  29,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:28.474Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "47",
+                       "object_repr":  "Order #47 - $594.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  30,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:46.213Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "39",
+                       "object_repr":  "Order #39 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  31,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:46.213Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "38",
+                       "object_repr":  "Order #38 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  32,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:46.213Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "37",
+                       "object_repr":  "Order #37 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  33,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:46.213Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "36",
+                       "object_repr":  "Order #36 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  34,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "35",
+                       "object_repr":  "Order #35 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  35,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "34",
+                       "object_repr":  "Order #34 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  36,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "33",
+                       "object_repr":  "Order #33 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  37,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "32",
+                       "object_repr":  "Order #32 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  38,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "31",
+                       "object_repr":  "Order #31 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  39,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "30",
+                       "object_repr":  "Order #30 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  40,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.199Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "29",
+                       "object_repr":  "Order #29 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  41,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "28",
+                       "object_repr":  "Order #28 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  42,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "27",
+                       "object_repr":  "Order #27 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  43,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "26",
+                       "object_repr":  "Order #26 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  44,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "25",
+                       "object_repr":  "Order #25 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  45,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "24",
+                       "object_repr":  "Order #24 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  46,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "23",
+                       "object_repr":  "Order #23 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  47,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "22",
+                       "object_repr":  "Order #22 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  48,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "21",
+                       "object_repr":  "Order #21 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  49,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "20",
+                       "object_repr":  "Order #20 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  50,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "19",
+                       "object_repr":  "Order #19 - $3139.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  51,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "18",
+                       "object_repr":  "Order #18 - $575.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  52,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "17",
+                       "object_repr":  "Order #17 - $594.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  53,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "16",
+                       "object_repr":  "Order #16 - $1932.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  54,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "15",
+                       "object_repr":  "Order #15 - $594.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  55,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "14",
+                       "object_repr":  "Order #14 - $169.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  56,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "13",
+                       "object_repr":  "Order #13 - $169.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  57,
+        "fields":  {
+                       "action_time":  "2025-06-13T13:15:56.200Z",
+                       "user":  5,
+                       "content_type":  8,
+                       "object_id":  "12",
+                       "object_repr":  "Order #12 - $594.00",
+                       "action_flag":  3,
+                       "change_message":  ""
+                   }
+    },
+    {
+        "model":  "admin.logentry",
+        "pk":  58,
+        "fields":  {
+                       "action_time":  "2026-03-26T08:54:40.873Z",
+                       "user":  6,
+                       "content_type":  7,
+                       "object_id":  "2",
+                       "object_repr":  "Burger",
+                       "action_flag":  2,
+                       "change_message":  "[]"
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  1,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$600000$7SaYbUrum2fBeD54pPkz7T$qHH7AXG+N3/wC3wIYpE59qigsn1qsH6Z7f0ec7XA0IU=",
+                       "last_login":  "2025-01-20T08:22:32.347Z",
+                       "is_superuser":  true,
+                       "username":  "sandhya",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2025-01-20T08:22:23.528Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  2,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$600000$P0LVwa8BW3AyuOG65cJyKe$mgFzIcF6b0A9Gxx6TXISESTvR/LLDmxxp44hjoiy/6M=",
+                       "last_login":  "2025-01-30T07:33:30.029Z",
+                       "is_superuser":  true,
+                       "username":  "sandy",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2025-01-30T07:32:57.323Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  3,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$600000$7PfCVeZwflCUq6Ex3ph1Se$Nu/66KQ2Ue+P3Mur5a3ddsI103+AVcGqbtEV0ujp63U=",
+                       "last_login":  "2025-03-19T13:03:00.042Z",
+                       "is_superuser":  true,
+                       "username":  "san",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2025-03-19T13:02:27.429Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  4,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$600000$Q4og8C1i5CjIYxkPZterNf$IzafaI6r3LCSHUI8uvDfdEiN4YH3axVzKls/WIXeX30=",
+                       "last_login":  null,
+                       "is_superuser":  true,
+                       "username":  "sujan",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2025-03-22T08:10:15.507Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  5,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$870000$9TcoxU05Z2tYX3dnbKsENJ$4+zurV3aRRX4BDS2JT1RRES5uRDcDJQ4x0DjeW26BDQ=",
+                       "last_login":  "2025-06-12T17:33:44.799Z",
+                       "is_superuser":  true,
+                       "username":  "prem",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "kk@gmail.com",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2025-06-12T17:33:00.567Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  6,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$1200000$kFgUamOeUbOuTwX1vPHuxM$5VlYDZPrJpUGZx1Vo5CQSA26pujIRszhqJ5uV2OnS24=",
+                       "last_login":  "2026-03-26T08:49:51.880Z",
+                       "is_superuser":  true,
+                       "username":  "kits",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2026-02-26T05:15:40.651Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  7,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$1200000$uDcBus4PZby0I318UxGZEM$bvQYalbvB7ztrAt3qMD+Cj6RLSdE67gv6a4/k8NbE54=",
+                       "last_login":  null,
+                       "is_superuser":  true,
+                       "username":  "punith",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2026-03-26T08:49:33.981Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  8,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$1200000$mqDFoNUFxqT5zJ2mq1Pt1R$oPIISy4fPvKWyNGvk1cvKGJIiEA+ybuSc3Hq+hA5ZjE=",
+                       "last_login":  "2026-05-02T05:57:49.632Z",
+                       "is_superuser":  true,
+                       "username":  "rama",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2026-05-02T05:57:31.351Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "auth.user",
+        "pk":  9,
+        "fields":  {
+                       "password":  "pbkdf2_sha256$1500000$f0ajweeXPk5JFcJiv08e1I$sGUTvDbB1HxbWCGK4tLkFeAmstB+NcuYNeplYWyI/x0=",
+                       "last_login":  "2026-08-20T23:13:14.494Z",
+                       "is_superuser":  true,
+                       "username":  "admin",
+                       "first_name":  "",
+                       "last_name":  "",
+                       "email":  "",
+                       "is_staff":  true,
+                       "is_active":  true,
+                       "date_joined":  "2026-08-20T23:12:32.480Z",
+                       "groups":  [
+
+                                  ],
+                       "user_permissions":  [
+
+                                            ]
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "8w424pj6xounnf9kh94qmldyuvw99uce",
+        "fields":  {
+                       "session_data":  ".eJxVjEEOwiAQAP-yZ0OglAV69O4byAKLVA1NSnsy_t006UGvM5N5Q6B9q2HvvIY5wwQIl18WKT25HSI_qN0XkZa2rXMURyJO28Vtyfy6nu3foFKvMIGJpEfJyITajs6jsRIVUtSDtIqxOFm0HZQrTjGXrHyRGr00KSJbzfD5AsGENyM:1w5gRw:_R9S1j9rmCtzlCjXkshjdFEzIKmItKS4hwnClamnCxM",
+                       "expire_date":  "2026-04-09T08:52:20.695Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "f705hblz5wvzghft1gwvhoem3zihov6a",
+        "fields":  {
+                       "session_data":  ".eJxVjMEOwiAQRP-FsyG4hS549O43ENgFqRpISnsy_rtt0oMeZ96beQsf1qX4tafZTywuAsTpt4uBnqnugB-h3pukVpd5inJX5EG7vDVOr-vh_h2U0Mu2Rmsy2RE0jwQ4KOfOCIxWAbJC5jgYRchuiIqIM2zZYA6sc7Y6aSU-X8gJN7E:1tdP3K:urU7kjIvrmWcoMKgEUi57SKr4f6ygiHD08z5nQQDufU",
+                       "expire_date":  "2025-02-13T07:33:30.040Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "gf1biwnia2nricwamswfgolbzognvymu",
+        "fields":  {
+                       "session_data":  ".eJxVjMEOwiAQRP-FsyEidAGP3vsNZNmlUjWQlPZk_HdL0oPOYQ7zZuYtAm5rDltLS5hZXIUSp98sIj1T6YAfWO5VUi3rMkfZK_KgTY6V0-t2dP8OMrbc15SMc8Z6pRmUJ2KMAzrrgM46XiDaiNMuACBW2jN6Y3bXg9depUl8vvmyOIA:1tZn3I:QuzdQn3YHT-g-09PtRRQCfxmwkM6eRqiyXgEVdIPxYo",
+                       "expire_date":  "2025-02-03T08:22:32.355Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "hr070utb260w6tdaolw8m2c9q6g0hb0w",
+        "fields":  {
+                       "session_data":  ".eJxVjb2OwjAQhF8FTR1FJv92CcVVVPcA0dq7IYbgIMc5iUO8-ykSBVfOzDczT_S0prFfF4m9ZxhoZJ-eJXeVsAV8oXCeczeHFL3NNyR_p0t-mlmmw5v9NzDSMsLAidRUSFsUri01K1cPrFtuSuuk2rfVngYehqLmrmmlqERpsrbWBdlGu660yMAy-R-Jj56YoywLzBOBbgKDE4XLGiiNuy9kuI9z2FyldafKrtGdQgaKQjCwEs40zVGQwfn0gMG3TOLS7ripDBMFvlG8wmA79UuK3iUYHD6av_7uZt5O6kaprsLr9QeLjGsI:1wxBxH:4Si-mc8bjEc-xwj9ih6kcfYt7O5d9GAzz-8yKWIhHgU",
+                       "expire_date":  "2026-09-03T23:13:51.340Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "iaul0z240dbunr8jy1ib3gehdwe9fvlq",
+        "fields":  {
+                       "session_data":  ".eJxVjDsOwjAQBe_iGln2Gv8o6XMGa-Pd4ACypTipEHeHSCmgfTPzXiLhtpa0dV7STOIijDj9biPmB9cd0B3rrcnc6rrMo9wVedAuh0b8vB7u30HBXr51jtaR8qRyMGyiceCCJguaAnp9zggQoqEABJNSnomNspqAY9AT5CjeH8LlNxg:1tut4W:sb32qv0KSNOmqiFc88LT4YBGWV6f5jA3ahI6V3575O4",
+                       "expire_date":  "2025-04-02T13:03:00.054Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "insxtj7v06utlroanz3h2ackarx0fbea",
+        "fields":  {
+                       "session_data":  ".eJxdjkFugzAQRa8S_bWFDCYOwzL7ngENtglOHBvZUCmNcveKKouoy5n3_sx_YuBtnYetuDx4ix4dxOduZHNzcQf2yvGSKpPimv1Y7Ur1pqX6StaF89sVnwdmLjN6NFZ1tWonsrVR1Bg9SttMjqRSJI9KO32aFI1MRDWpruVad0fZSq2nruZGQ8C64L9dfgxsbXaloH8i8t2hR-Y7Q2CZU9xHIkkdnehEEODs-E-58tVHvnCGgPHrAz1GFy8ctrxBIHC0d8439IiO84GXFEI6zKksfuWwF_Blzd6s_4I_fjHJ7n-PWspa4vX6BTCtboY:1wJ3Mb:sXuu8Kj47vSZdqJzfzlXrp38K7M0W3CWwoV1yCbz1VM",
+                       "expire_date":  "2026-05-16T05:58:05.938Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "pjudy8z7dh0sdzblw06kpy3kk1jqv9ih",
+        "fields":  {
+                       "session_data":  ".eJxVj8tqwzAQRX8laF1M9LBlZdl9oX9gRo9YSmzJSI7BDfn3jEgK7XLO3Af3Tga4rX64FZeHYMmJtOTjL9Ngri7Wh71AHFNjUlxz0E2VNO9vab6SddPnW_svwEPxNVawXrPzkaq-Y4JaZYxlUigQoDsGreHSUNM6zlDhNFe9FlTbFiTlyvVnDMWGsLm8D2BtdqWQ051EmB2mf2c3o2LxKdZTSUGp4rJTCCE7QLaFC-wRRsjITFh3ZMWHOY0jIJkg2hnyFWlalkOB3YPN4WCmsVaHgqPN-vJs8Ov6CYvB5XWfZPTIyePxBJ6SbV8:1uSWHp:fvXwmpPjcD_Xf9QBEPoDLgWOD6gBDZspTJBBs6L_GJE",
+                       "expire_date":  "2025-07-04T07:35:45.641Z"
+                   }
+    },
+    {
+        "model":  "sessions.session",
+        "pk":  "ty6uwpmr11vfz0w4ns3r07h0ftal67pd",
+        "fields":  {
+                       "session_data":  ".eJxVjEEOwiAQAP-yZ0OglAV69O4byAKLVA1NSnsy_t006UGvM5N5Q6B9q2HvvIY5wwQIl18WKT25HSI_qN0XkZa2rXMURyJO28Vtyfy6nu3foFKvMIGJpEfJyITajs6jsRIVUtSDtIqxOFm0HZQrTjGXrHyRGr00KSJbzfD5AsGENyM:1vvTl9:VVffJElONfZs892tCTNbJzM6lMxWb6uIgtj1rmi23mU",
+                       "expire_date":  "2026-03-12T05:17:59.570Z"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  1,
+        "fields":  {
+                       "name":  "Farmhouse Pizza",
+                       "description":  "Delightful combination of onion,capsicum,tomato and grilled mushroom. Available in cheese Burst,Wheat Thin Crust and Pan Crust options.",
+                       "price":  "269.00",
+                       "image":  "food_images/farmhouse_pizza_qKFCpht.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  2,
+        "fields":  {
+                       "name":  "Burger",
+                       "description":  "Oven-baked buns with cheese,paneer,tomato,capsicum and red paprika in creamy mayo...",
+                       "price":  "169.00",
+                       "image":  "food_images/burger.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  3,
+        "fields":  {
+                       "name":  "sushi roll",
+                       "description":  "Crab stick, cucumber, avacado, tobika, rolled with sushi vinegared rice and nori...",
+                       "price":  "425.00",
+                       "image":  "food_images/sushi_roll.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  4,
+        "fields":  {
+                       "name":  "butter chicken",
+                       "description":  "buttery chicken toast very yummy.....",
+                       "price":  "150.00",
+                       "image":  "food_images/butter_chicken.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  5,
+        "fields":  {
+                       "name":  "Garlic Naan",
+                       "description":  "it was very buttery garlic yummy dish which is madeup of atta and maida which is roasted in fire.....",
+                       "price":  "50.00",
+                       "image":  "food_images/Garlic_Naan.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  6,
+        "fields":  {
+                       "name":  "paneer Tikka",
+                       "description":  "Grilled cottage cheese marinated in spices.",
+                       "price":  "150.00",
+                       "image":  "food_images/Paneer_Tikka.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  7,
+        "fields":  {
+                       "name":  "Mango Lassi",
+                       "description":  "Refreshing yogurt-based mango drink.",
+                       "price":  "70.00",
+                       "image":  "food_images/Mango_Lassi.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  8,
+        "fields":  {
+                       "name":  "Margherita Pizza",
+                       "description":  "Traditional pizza topped with fresh mozzarella and basil.",
+                       "price":  "300.00",
+                       "image":  "food_images/Margherita_Pizza.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  9,
+        "fields":  {
+                       "name":  "Fettuccine Alfredo",
+                       "description":  "Creamy pasta with a hint of garlic and parmesan",
+                       "price":  "350.00",
+                       "image":  "food_images/Fettuccine_Alfredo.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  10,
+        "fields":  {
+                       "name":  "Caprese Salad",
+                       "description":  "Tomatoes, mozzarella, and basil drizzled with olive oil",
+                       "price":  "200.00",
+                       "image":  "food_images/Caprese_Salad.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  11,
+        "fields":  {
+                       "name":  "Tiramisu",
+                       "description":  "Classic Italian dessert with coffee and mascarpone",
+                       "price":  "150.00",
+                       "image":  "food_images/Tiramisu.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  12,
+        "fields":  {
+                       "name":  "California Roll",
+                       "description":  "Crab, avocado, and cucumber rolled in rice and seaweed.",
+                       "price":  "350.00",
+                       "image":  "food_images/California_Roll.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  13,
+        "fields":  {
+                       "name":  "Spicy Tuna Roll",
+                       "description":  "Tuna with a spicy mayo kick",
+                       "price":  "400.00",
+                       "image":  "food_images/Spicy_Tuna_Roll.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  14,
+        "fields":  {
+                       "name":  "Miso Soup",
+                       "description":  "Warm soup with tofu, seaweed, and miso paste",
+                       "price":  "120.00",
+                       "image":  "food_images/Miso_Soup.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  15,
+        "fields":  {
+                       "name":  "Green Tea Mochi",
+                       "description":  "Sweet rice cake with a green tea filling",
+                       "price":  "100.00",
+                       "image":  "food_images/Green_Tea_Mochi.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  16,
+        "fields":  {
+                       "name":  "Classic Cheeseburger",
+                       "description":  "Beef patty with cheese, lettuce, and tomato.",
+                       "price":  "250.00",
+                       "image":  "food_images/Classic_Cheeseburger.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  17,
+        "fields":  {
+                       "name":  "BBQ Bacon Burger",
+                       "description":  "Topped with crispy bacon and tangy BBQ sauce.",
+                       "price":  "350.00",
+                       "image":  "food_images/BBQ_Bacon_Burger.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  18,
+        "fields":  {
+                       "name":  "Sweet Potato Fries",
+                       "description":  "Crispy fries with a touch of sweetness.",
+                       "price":  "120.00",
+                       "image":  "food_images/Sweet_Potato_Fries.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  19,
+        "fields":  {
+                       "name":  "Milkshake Trio",
+                       "description":  "Vanilla, chocolate, and strawberry milkshakes.",
+                       "price":  "200.00",
+                       "image":  "food_images/Milkshake_Trio.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  20,
+        "fields":  {
+                       "name":  "Quinoa Salad Bowl",
+                       "description":  "Quinoa, avocado, and roasted veggies with tahini dressing",
+                       "price":  "200.00",
+                       "image":  "food_images/Quinoa_Salad_Bowl.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  21,
+        "fields":  {
+                       "name":  "Vegan Burger",
+                       "description":  "Plant-based patty with all the trimmings.",
+                       "price":  "250.00",
+                       "image":  "food_images/Vegan_Burger.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  22,
+        "fields":  {
+                       "name":  "Smoothie Bowl",
+                       "description":  "Blended fruits topped with granola and seeds",
+                       "price":  "150.00",
+                       "image":  "food_images/Smoothie_Bowl.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  23,
+        "fields":  {
+                       "name":  "Chickpea Curry",
+                       "description":  "Rich and flavorful vegan curry",
+                       "price":  "180.00",
+                       "image":  "food_images/Chickpea_Curry.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  24,
+        "fields":  {
+                       "name":  "Gobi",
+                       "description":  "gobi is very tasty....and yummy...",
+                       "price":  "80.00",
+                       "image":  "food_images/gobi.jpg"
+                   }
+    },
+    {
+        "model":  "orders.fooditem",
+        "pk":  25,
+        "fields":  {
+                       "name":  "lassi",
+                       "description":  "very yummy and tasty....",
+                       "price":  "120.00",
+                       "image":  "food_images/Mango_Lassi_pqiF2uc.jpg"
+                   }
+    },
+    {
+        "model":  "orders.cart",
+        "pk":  99,
+        "fields":  {
+                       "food_item":  1,
+                       "quantity":  1,
+                       "created_at":  "2026-08-20T23:13:28.764Z"
+                   }
+    },
+    {
+        "model":  "orders.cart",
+        "pk":  100,
+        "fields":  {
+                       "food_item":  2,
+                       "quantity":  1,
+                       "created_at":  "2026-08-20T23:13:31.282Z"
+                   }
+    },
+    {
+        "model":  "orders.cart",
+        "pk":  101,
+        "fields":  {
+                       "food_item":  3,
+                       "quantity":  1,
+                       "created_at":  "2026-08-20T23:13:33.961Z"
+                   }
+    },
+    {
+        "model":  "orders.useraddress",
+        "pk":  3,
+        "fields":  {
+                       "user":  5,
+                       "name":  "Prem",
+                       "phone":  "9741193769",
+                       "area":  "vijaynagar",
+                       "city":  "shimogga",
+                       "landmark":  "opp sayhadri clg",
+                       "district":  "shivamogga",
+                       "zipcode":  "572103",
+                       "created_at":  "2025-06-13T14:15:09.617Z"
+                   }
+    },
+    {
+        "model":  "orders.useraddress",
+        "pk":  4,
+        "fields":  {
+                       "user":  6,
+                       "name":  "rama",
+                       "phone":  "9988776543",
+                       "area":  "rajajinagar",
+                       "city":  "bengaluru",
+                       "landmark":  "near apollo hospital",
+                       "district":  "bengaluru",
+                       "zipcode":  "560010",
+                       "created_at":  "2026-02-26T05:17:57.101Z"
+                   }
+    },
+    {
+        "model":  "orders.useraddress",
+        "pk":  5,
+        "fields":  {
+                       "user":  6,
+                       "name":  "punith",
+                       "phone":  "9988776543",
+                       "area":  "rajajinagar",
+                       "city":  "bengaluru",
+                       "landmark":  "near apollo hospital",
+                       "district":  "bengaluru",
+                       "zipcode":  "560010",
+                       "created_at":  "2026-03-26T08:51:32.660Z"
+                   }
+    },
+    {
+        "model":  "orders.useraddress",
+        "pk":  6,
+        "fields":  {
+                       "user":  8,
+                       "name":  "rama",
+                       "phone":  "9909897979",
+                       "area":  "rajajinagar",
+                       "city":  "bengaluru",
+                       "landmark":  "near apollo hospital",
+                       "district":  "bengaluru",
+                       "zipcode":  "560010",
+                       "created_at":  "2026-05-02T05:58:05.930Z"
+                   }
+    },
+    {
+        "model":  "orders.useraddress",
+        "pk":  7,
+        "fields":  {
+                       "user":  9,
+                       "name":  "Manjunath G",
+                       "phone":  "09980386980",
+                       "area":  "bengalore",
+                       "city":  "Select City",
+                       "landmark":  "",
+                       "district":  "Bengalore",
+                       "zipcode":  "560084",
+                       "created_at":  "2026-08-20T23:13:51.328Z"
+                   }
+    }
+]
