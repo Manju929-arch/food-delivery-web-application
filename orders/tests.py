@@ -9,6 +9,9 @@ class AuthFlowTests(TestCase):
             reverse('register'),
             {
                 'username': 'newuser',
+                'first_name': 'New',
+                'last_name': 'User',
+                'email': 'newuser@example.com',
                 'password1': 'StrongPass123',
                 'password2': 'StrongPass123',
             },
@@ -16,7 +19,10 @@ class AuthFlowTests(TestCase):
         )
 
         self.assertEqual(response.status_code, 200)
-        self.assertTrue(get_user_model().objects.filter(username='newuser').exists())
+        user = get_user_model().objects.get(username='newuser')
+        self.assertEqual(user.first_name, 'New')
+        self.assertEqual(user.last_name, 'User')
+        self.assertEqual(user.email, 'newuser@example.com')
         self.assertContains(response, 'Hi, newuser')
 
     def test_login_view_authenticates_existing_user(self):

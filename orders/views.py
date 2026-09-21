@@ -11,13 +11,14 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.utils.http import url_has_allowed_host_and_scheme
+from .forms import RegistrationForm
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 def register(request):
     if request.user.is_authenticated:
         return redirect('home')
-    form = UserCreationForm(request.POST or None)
+    form = RegistrationForm(request.POST or None)
     if request.method == 'POST' and form.is_valid():
         user = form.save()
         login(request, user)
