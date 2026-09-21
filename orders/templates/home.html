@@ -3,18 +3,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Delivery</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body style="background: #fff6f6; font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0;">
     <header style="background: #f06666; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px 0 10px 0;">
-        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto;">
-            <div>
+        <div class="site-header-inner" style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto;">
+            <div class="site-brand">
                 <a href="{% url 'home' %}" style="text-decoration: none;"><h1 style="margin: 0; font-size: 2.2rem; color: #222;">Dhee Quick Bites</h1></a>
                 <p style="margin: 0; color: #221f1f;">Order your favorite food delivered to your doorstep.</p>
             </div>
-            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end;">
+            <div class="site-actions" style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end;">
                 {% if user.is_authenticated %}
                     <div style="display:flex; align-items:center; gap:10px; background: rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.3); backdrop-filter: blur(2px); border-radius:999px; padding:8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
                         <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#fff; color:#f06666; font-size:1rem; font-weight:700;">👋</span>

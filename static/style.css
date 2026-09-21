@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,18 +20,21 @@ header h1 {
 }
 
 .food-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    max-width: 1180px;
+    box-sizing: border-box;
+    margin: 0 auto;
     padding: 2rem;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .food-card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 100%;
+    box-sizing: border-box;
     padding: 1rem;
     text-align: center;
 }
@@ -40,6 +44,7 @@ header h1 {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
 }
 
 .food-card button {
@@ -53,4 +58,71 @@ header h1 {
 
 .food-card button:hover {
     background: #e55a50;
+}
+
+@media (max-width: 700px) {
+    .food-container {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .food-card {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 0.75rem;
+    }
+
+    .food-card img {
+        height: clamp(150px, 48vw, 220px) !important;
+    }
+
+    header .site-header-inner {
+        width: auto !important;
+        margin: 0 1rem !important;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header .site-brand {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .site-brand h1 {
+        font-size: 2rem !important;
+        line-height: 1.05;
+    }
+
+    header .site-brand p {
+        font-size: 0.85rem;
+    }
+
+    header .site-actions {
+        width: 100%;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    header .site-actions > a,
+    header .site-actions > form {
+        margin: 0 !important;
+    }
+
+    main > div[style*="max-width"] {
+        width: auto !important;
+        margin: 1rem !important;
+        padding: 1.25rem 1rem !important;
+    }
+
+    main > div[style*="max-width"] > div[style*="display: flex"] {
+        align-items: flex-start !important;
+        flex-wrap: wrap;
+    }
+
+    main > div[style*="max-width"] > div[style*="display: flex"] > div:last-child {
+        width: 100%;
+        justify-content: flex-end;
+    }
 }
