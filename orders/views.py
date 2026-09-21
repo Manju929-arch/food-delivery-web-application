@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse
+from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 from .models import FoodItem, Cart, Order, OrderItem, UserAddress
@@ -51,6 +52,11 @@ def home(request):
 
 @csrf_exempt  # Temporarily disable CSRF for testing (use CSRF token in production)
 def add_to_cart(request, food_id):
+    if not request.user.is_authenticated:
+        return JsonResponse({
+            'message': 'Please log in before adding items to your cart.',
+            'login_url': reverse('login'),
+        }, status=401)
     if request.method == 'POST':
         try:
             food_item = FoodItem.objects.get(id=food_id)

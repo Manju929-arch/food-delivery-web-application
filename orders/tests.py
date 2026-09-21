@@ -1,9 +1,19 @@
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
+from .models import Cart, FoodItem
 
 
 class AuthFlowTests(TestCase):
+    def test_anonymous_user_must_log_in_before_adding_to_cart(self):
+        food_item = FoodItem.objects.create(name='Test Pizza', description='Test food', price=100)
+
+        response = self.client.post(reverse('add_to_cart', args=[food_item.id]))
+
+        self.assertEqual(response.status_code, 401)
+        self.assertEqual(response.json()['login_url'], reverse('login'))
+        self.assertFalse(Cart.objects.exists())
+
     def test_register_view_creates_user(self):
         response = self.client.post(
             reverse('register'),

@@ -10,8 +10,11 @@ document.querySelectorAll('.food-card button').forEach(button => {
         })
         .then(response => response.json())
         .then(data => {
-            if (data.message) {
-                showPopup(data.message); // Just show the popup, no redirect
+            if (data.login_url) {
+                const nextUrl = encodeURIComponent(window.location.pathname + window.location.search);
+                window.location.href = `${data.login_url}?next=${nextUrl}`;
+            } else if (data.message) {
+                showPopup(data.message);
             }
         })
         .catch(error => {
