@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Dhee Quick Bites</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #fff6f3 0%, #fff 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        .auth-shell {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+        .auth-card {
+            width: 100%;
+            max-width: 460px;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 45px rgba(240, 102, 102, 0.12);
+            padding: 34px 30px 24px;
+            border: 1px solid rgba(240, 102, 102, 0.12);
+        }
+        .auth-title {
+            margin: 0 0 18px;
+            font-size: clamp(2.2rem, 3vw, 3rem);
+            color: #f06666;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+        }
+        .auth-subtitle {
+            margin: 0 0 22px;
+            color: #5b4b4b;
+            font-size: 0.98rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        form p {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            color: #333;
+            font-weight: 600;
+        }
+        form input {
+            width: 100%;
+            box-sizing: border-box;
+            border: 2px solid #f5d1d1;
+            background: #fffaf9;
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+        form input:focus {
+            outline: none;
+            border-color: #f06666;
+            box-shadow: 0 0 0 4px rgba(240, 102, 102, 0.12);
+        }
+        .primary-btn {
+            margin-top: 10px;
+            width: 100%;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f06666 0%, #ea5555 100%);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: 0 10px 18px rgba(240, 102, 102, 0.22);
+        }
+        .primary-btn:hover {
+            transform: translateY(-1px);
+        }
+        .auth-links {
+            margin-top: 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.96rem;
+            color: #4b3d3d;
+        }
+        .auth-links a {
+            color: #d94e4e;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <main class="auth-shell">
+        <div class="auth-card">
+            <h1 class="auth-title">Create account</h1>
+            <p class="auth-subtitle">Join us and start ordering your favorite meals.</p>
+            <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="primary-btn">Register</button>
+            </form>
+            <div class="auth-links">
+                <p>Already registered? <a href="{% url 'login' %}">Login</a></p>
+                <p><a href="{% url 'home' %}">Back to menu</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

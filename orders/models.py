@@ -20,6 +20,7 @@ class Cart(models.Model):
         return f"{self.food_item.name} - {self.quantity}"
 
 class Order(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True, related_name='orders')
     address = models.JSONField(blank=True, null=True)  # Use JSONField for structured data
     total_price = models.DecimalField(max_digits=10, decimal_places=2)
     created_at = models.DateTimeField(auto_now_add=True)

@@ -14,14 +14,24 @@
                 <a href="{% url 'home' %}" style="text-decoration: none;"><h1 style="margin: 0; font-size: 2.2rem; color: #222;">Dhee Quick Bites</h1></a>
                 <p style="margin: 0; color: #221f1f;">Order your favorite food delivered to your doorstep.</p>
             </div>
-            <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end;">
+                {% if user.is_authenticated %}
+                    <div style="display:flex; align-items:center; gap:10px; background: rgba(255,255,255,0.18); border:1px solid rgba(255,255,255,0.3); backdrop-filter: blur(2px); border-radius:999px; padding:8px 14px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <span style="display:inline-flex; align-items:center; justify-content:center; width:28px; height:28px; border-radius:50%; background:#fff; color:#f06666; font-size:1rem; font-weight:700;">👋</span>
+                        <span style="color:#fff; font-weight:600;">Hi, {{ user.username }}</span>
+                    </div>
+                    <form method="post" action="{% url 'logout' %}" style="display:inline; margin:0;">{% csrf_token %}<button type="submit" style="padding:10px 16px; background:#fff; color:#222; border:0; border-radius:999px; cursor:pointer; font-weight:600; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">Logout</button></form>
+                {% else %}
+                    <a href="{% url 'login' %}" style="color:#222; font-weight:600; text-decoration:none;">Login</a>
+                    <a href="{% url 'register' %}" style="color:#222; font-weight:600; text-decoration:none;">Register</a>
+                {% endif %}
                 <a href="{% url 'view_cart' %}" title="View Cart">
-                    <button style="background: #f5f5f5; border: none; border-radius: 50%; padding: 12px 16px; cursor: pointer;">
+                    <button style="background: #f5f5f5; border: none; border-radius: 50%; padding: 12px 16px; cursor: pointer; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
                         <i class='bx bx-cart' style="font-size: 2rem; color: #222;"></i>
                     </button>
                 </a>
                 <a href="{% url 'my_orders' %}">
-                    <button style="padding: 10px 20px; font-size: 16px; background: #222; color: #fff; border: none; border-radius: 6px; margin-left: 10px; cursor: pointer;">
+                    <button style="padding: 10px 20px; font-size: 16px; background: #222; color: #fff; border: none; border-radius: 999px; margin-left: 4px; cursor: pointer; font-weight:600; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
                         My Orders
                     </button>
                 </a>

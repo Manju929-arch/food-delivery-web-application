@@ -7,8 +7,40 @@ import json
 import stripe
 import os
 from django.conf import settings
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.utils.http import url_has_allowed_host_and_scheme
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
+
+def register(request):
+    if request.user.is_authenticated:
+        return redirect('home')
+    form = UserCreationForm(request.POST or None)
+    if request.method == 'POST' and form.is_valid():
+        user = form.save()
+        login(request, user)
+        return redirect('home')
+    return render(request, 'register.html', {'form': form})
+
+def user_login(request):
+    if request.user.is_authenticated:
+        return redirect('home')
+    form = AuthenticationForm(request, data=request.POST or None)
+    if request.method == 'POST' and form.is_valid():
+        login(request, form.get_user())
+        next_url = request.POST.get('next') or request.GET.get('next')
+        if next_url and url_has_allowed_host_and_scheme(next_url, {request.get_host()}):
+            return redirect(next_url)
+        return redirect('home')
+    return render(request, 'login.html', {'form': form})
+
+@require_POST
+def user_logout(request):
+    logout(request)
+    return redirect('home')
+
 def home(request):
     food_items = FoodItem.objects.all()
     food_item = food_items.filter(id=1).first()  # Safely get the first matching object
@@ -49,7 +81,7 @@ def place_order(request):
         if not cart_items:
             return JsonResponse({'message': 'Cart is empty!'}, status=400)
         total_price = sum(item.food_item.price * item.quantity for item in cart_items)
-        order = Order.objects.create(address=address, total_price=total_price)
+        order = Order.objects.create(user=request.user, address=address, total_price=total_price)
         for item in cart_items:
             OrderItem.objects.create(order=order, food_item=item.food_item, quantity=item.quantity)
         cart_items.delete()
@@ -88,15 +120,16 @@ def delete_cart_item(request, cart_id):
             return JsonResponse({'message': 'Cart item not found!'}, status=404)
     return JsonResponse({'message': 'Invalid request method!'}, status=400)
 
+@login_required
 def my_orders(request):
-    orders = Order.objects.all().order_by('-created_at')  # or filter by user if needed
+    orders = Order.objects.filter(user=request.user).order_by('-created_at')
     return render(request, 'my_orders.html', {'orders': orders})
 
 @csrf_exempt
 def delete_order(request, order_id):
     if request.method == 'POST':
         try:
-            order = Order.objects.get(id=order_id)
+            order = Order.objects.get(id=order_id, user=request.user)
             order.delete()
             return JsonResponse({'message': 'Order deleted successfully!'})
         except Order.DoesNotExist:
@@ -134,6 +167,7 @@ def create_stripe_session(request):
             return JsonResponse({'message': str(e)}, status=400)
     return JsonResponse({'message': 'Invalid request method!'}, status=400)
 
+@login_required
 def address(request):
     previous_addresses = UserAddress.objects.filter(user=request.user)
     if request.method == 'POST':
@@ -165,17 +199,15 @@ def address(request):
         return redirect('confirm_order')
     return render(request, 'address.html', {'previous_addresses': previous_addresses})
 
+@login_required
 def confirm_order(request):
     address = request.session.get('delivery_address')
     if not address:
         return redirect('address')
     return render(request, 'confirm_order.html', {'address': address})
 
-def my_orders(request):
-    orders = Order.objects.all().order_by('-created_at')  # or filter by user if needed
-    return render(request, 'my_orders.html', {'orders': orders})
-
 @require_POST
+@login_required
 def delete_address(request, address_id):
     try:
         address = UserAddress.objects.get(id=address_id, user=request.user)
